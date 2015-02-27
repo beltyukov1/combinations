@@ -10,7 +10,7 @@ class CombinationSpec extends Specification {
         def combinationSet = 2
 
         when:
-        def combinations = Combination.getAllPossibleCombinations(initialVector, combinationSet)
+        def combinations = Combination.generatePossibleSimpleCombinations(initialVector, combinationSet)
 
         then:
         combinations.size() == 3
