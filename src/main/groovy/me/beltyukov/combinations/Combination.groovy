@@ -6,7 +6,7 @@ class Combination {
 
     public static void main(String[] args) {
         if (!args || args.size() != 2) {
-            println "Usage: `combinations <numbers set> <combinations set>`"
+            println "Usage: `./combinations <initial set> <desired combination length>`"
         } else {
             def initialVector = args?.first()?.split(',')
             def combinationSet = args[1] as Integer
