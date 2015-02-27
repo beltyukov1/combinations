@@ -1,0 +1,18 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+mainClassName = 'me.beltyukov.combinations.Combination'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.1'
+    compile 'com.googlecode.combinatoricslib:combinatoricslib:2.1'
+    compile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
